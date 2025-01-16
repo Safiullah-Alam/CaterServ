@@ -1,0 +1,508 @@
+:root {
+    --lp-color: #fffcf8;
+    --lb-color: #d4a762;
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.brown-border {
+    border: 1px solid var(--lb-color);
+}
+
+.custom-btn {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #050709 !important;
+}
+
+.bg-brown{
+    background: var(--lb-color);
+}
+
+.text-brown{
+    color: var(--lb-color);
+}
+
+#header {
+    background: var(--lp-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#header #logo h1 {
+    color: var(--lb-color);
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#header #logo h1 span {
+    color: #000;
+    margin: -10px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#header .nav-ul li a {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px 12px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+#header .nav-ul li a:hover,
+#header .nav-ul li a.active {
+    color: var(--lb-color);
+}
+
+#header .nav-ul li a i {
+    margin-left: 8px;
+    font-size: 13px;
+}
+
+#header .search-bar {
+    width: 44px;
+    height: 44px;
+    background: var(--lb-color);
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+}
+
+#header .search-bar:hover {
+    background: #000;
+    color: var(--lb-color);
+}
+
+#header .book-btn {
+    background: var(--lb-color);
+    color: #000;
+    font-weight: 600;
+}
+
+#header .book-btn:hover {
+    background: #000;
+    color: var(--lb-color) !important;
+}
+
+/* hero section */
+#hero {
+    background: var(--lp-color);
+}
+
+#hero .hero-content h1 {
+    color: #000;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#hero .hero-content h1 .cater {
+    color: var(--lb-color);
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#hero .hero-content a {
+    background: var(--lb-color);
+    color: #000;
+    font-weight: 600;
+}
+
+#hero .hero-content a:hover {
+    background: #000;
+    color: var(--lb-color);
+}
+
+/* about section */
+#about .about-content button{
+    background: var(--lp-color);
+}
+
+#about .about-content h1 {
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#about .about-content i {
+    color: var(--lb-color);
+}
+
+#about .about-content a {
+    background: var(--lb-color);
+    color: #000;
+}
+
+#about .about-content a i {
+    color: #000;
+    font-weight: 600;
+}
+
+#about .about-content a:hover,
+#about .about-content a:hover i {
+    background: #000;
+    color: var(--lb-color);
+}
+
+#about .about-content .about-info div {
+    padding-bottom: 1.5rem;
+}
+
+/* fact section */
+#fact .video img {
+    border-radius: 8px;
+}
+
+#fact .video .btn-play {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 18px 20px 18px 28px;
+    background: #fff;
+}
+
+#fact .video .btn-play i {
+    font-size: 30px;
+}
+
+#fact .fact-card {
+    background: var(--lb-color);
+}
+
+#fact .fact-card h5 {
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#fact .fact-card .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* services section */
+#services .service-title h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#services .service-title button{
+    background: var(--lp-color);
+}
+
+#services .card{
+    background: var(--lp-color);
+}
+
+#services .card a{
+    background: var(--lb-color);
+    font-weight: 500;
+    transition: all 1s;
+}
+
+#services .card i{
+    color: var(--lb-color);
+    transition: 1.5s
+}
+
+#services .card p{
+    color: #9a9a9a;
+    transition: all 1s
+}
+.overlay_card{
+    top: -338px;
+    left:0;
+    transition: 1s;
+    background: var(--lb-color);
+}
+.our_services_card .card-body,
+.our_services_card i{
+    z-index: 11;
+}
+.our_services_card:hover .overlay_card{
+    top: 0px;
+    transition: 1s;
+}
+.our_services_card:hover i{
+    color: #000 !important;
+    transition: 1.5s;
+}
+.our_services_card:hover .card-body p{
+    color: #fff !important;
+}
+.our_services_card:hover a{
+    background: #fff !important;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .overlay_card{
+        top: -362px;
+    }
+}
+
+
+/* event section */
+#event h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#event button{
+    width: 150px;
+    background: var(--lp-color);
+}
+
+#event button.active{
+    background: var(--lb-color);
+}
+.event_overlay{
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.event_card:hover .event_overlay{
+    opacity: 1;
+    transition: 0.5s;
+}
+.event_card .event_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(212, 167, 98, 0.7);
+}
+
+/* menu section */
+.menu{
+    background: var(--lp-color);
+}
+
+.menu .menu-title h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.menu button{
+    width: 150px;
+}
+.menu button.active{
+    background: var(--lb-color);
+}
+
+.menu .menu-item p{
+    color: #9a9a9a;
+}
+
+.menu-border-bottom{
+    border-bottom: 1px dashed var(--lb-color);
+}
+
+/* booking-form section */
+.booking .booking-form{
+    background: var(--lp-color);
+    border-bottom: 1px solid var(--lb-color);
+    border-top: 1px solid var(--lb-color);
+}
+
+.booking .booking-title h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.booking img{
+    object-fit: cover;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.booking .booking-form button{
+    transition: all 0.5s;
+}
+
+.booking .booking-form button:hover{
+    color: var(--lb-color) !important;
+    background: #000;
+}
+
+.booking .booking-form .form-select , .booking .booking-form .form-control{
+    color: #9a9a9a;
+    border-radius: 8px;
+} 
+
+/* team section */
+.team .team-title h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.team .team-card .team-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.team .team-card .team-icon a{
+    width: 44px;
+    height: 44px;
+    transition: all 0.5s;
+}
+
+.team .team-card .team-icon a:hover{
+    color: var(--lb-color) !important;
+    background: #000;
+}
+
+.team .team-card .team-icon a.social-btn{
+    opacity: 0;
+    transition: 0.5s !important;
+}
+
+.team .team-card:hover .team-icon a.social-btn{
+    opacity: 1;
+}
+
+.team .team-card .card{
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+}
+
+.team .card-content{
+    transition: all 0.5s;
+}
+
+.team .team-card:hover .card-content{
+    background: var(--lb-color) !important;
+}
+
+.team .team-card:hover .card-content h4{
+    color: #000;
+}
+
+/* blog section */
+.blog .blog-title h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.blog .blog-content{
+    background: var(--lp-color);
+    transform: translateY(-50px);
+}
+
+.blog .blog-item img{
+    transition: all 0.5s;
+}
+
+.blog .blog-item:hover img{
+    transform: scale(1.3);
+}
+
+.blog .blog-content a{
+    transition: all 0.3s;
+}
+
+.blog .blog-content a:hover{
+    color: var(--lb-color) !important;
+}
+
+/* footer section */
+.footer{
+    background: var(--lp-color);
+}
+
+.footer .footer-content h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.footer .footer-content p{
+    color: #9a9a9a;
+}
+
+.footer .footer-content .footer-links a{
+    width: 38px;
+    height: 38px;
+    transition: all 0.5s;
+}
+
+.footer .footer-content .footer-links a:hover{
+    background: #000;
+    color: var(--lb-color) !important;
+}
+
+.footer .footer-facilities li{
+    list-style: none;
+}
+
+.footer .footer-facilities i{
+    color: var(--lb-color);
+}
+
+.footer .footer-facilities a{
+    color: #9a9a9a;
+}
+
+.footer .footer-facilities a:hover{
+    color: var(--lb-color);
+}
+
+.footer .footer-contact p{
+    color: #9a9a9a;
+}
+
+/* copyright section */
+.copyright{
+    background: #000;
+}
+
+.copyright .custom-copyright a{
+    border-bottom: 1px solid #fff;
+}
+
+/* testimonial section */
+.testimonial .testimonial-title h1{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.testimonial .testimonial-title button{
+    background: var(--lp-color);
+}
+
+.testimonial .testimonial-item{
+    background: var(--lp-color);
+    margin-right: 25px;
+    padding: 20px;
+}
+
+.testimonial .testimonial-item .quotes{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #9a9a9a;
+}
+
+.testimonial .testimonial-item .intro p{
+    color: #9a9a9a;
+}
+
+.testimonial .testimonial-item .testimonial-content .review i{
+    color: #d4a762;
+}
+
+.testimonial .testimonial-item .testimonial-content p{
+    color: #9a9a9a;
+}
